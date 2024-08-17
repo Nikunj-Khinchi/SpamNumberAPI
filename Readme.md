@@ -30,20 +30,20 @@
   - pip (Python package manager)
 
 #### Installation Steps
-  - Extract Zip File
-  - `cd spam-detection-api`
+- git clone `https://github.com/Nikunj-Khinchi/SpamNumberAPI.git`
+- `cd spam-detection-api`
   
 #### Create a Virtual Environment:
     
-    - `python -m venv venv`
-    - `source venv/bin/activate` # On Windows use `venv\Scripts\activate`
+- `python -m venv venv`
+- `source venv/bin/activate` # On Windows use `venv\Scripts\activate`
 
 #### Install Dependencies:
-  - `pip install -r requirements.txt`
+   - `pip install -r requirements.txt`
 
 ### Set Up the Database:
   - Used the local postgresql for setup
-  - Configure your database settings in `spam_detection_api/settings.py.`
+  - Configure your database settings in `spam_detection_api/settings.py.`
 
 ```
 DATABASES = {
@@ -66,14 +66,14 @@ DATABASES = {
 ```
 
 #### Apply migrations:
-- `python manage.py makemigrations`
-- `python manage.py migrate`
- 
+  - `python manage.py makemigrations`
+  - `python manage.py migrate`
+
 #### Create a Superuser:
-  - `python manage.py createsuperuser`
+  - `python manage.py createsuperuser`
 
 #### Run the Development Server:
-  - `python manage.py runserver`
+  - `python manage.py runserver`
 
 
 # Access the API:
@@ -294,7 +294,7 @@ Authorization: JWT <your-token>
 1. Search by Phone Number
 
 ```
-Endpoint: GET /api/search/?q=7984094163&search_by=phone_number
+Endpoint: GET /api/search/?q=0000000000&search_by=phone_number
 
 Headers:
 
