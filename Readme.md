@@ -29,51 +29,53 @@
   - PostgreSQL (or another relational database supported by Django)
   - pip (Python package manager)
 
-  ### Installation Steps
+#### Installation Steps
   - Extract Zip File
   - `cd spam-detection-api`
   
-    ### Create a Virtual Environment:
+#### Create a Virtual Environment:
     
     - `python -m venv venv`
     - `source venv/bin/activate` # On Windows use `venv\Scripts\activate`
 
-  ### Install Dependencies:
+#### Install Dependencies:
   - `pip install -r requirements.txt`
 
-  ### Set Up the Database:
+### Set Up the Database:
   - Used the local postgresql for setup
   - Configure your database settings in `spam_detection_api/settings.py.`
 
-  ```DATABASES = {
+```
+DATABASES = {
 
-      'default': {
+     'default': {
 
-          'ENGINE': 'django.db.backends.postgresql',
+         'ENGINE': 'django.db.backends.postgresql',
 
-          'NAME': 'your_database_name',  // Create the table in your database before run server
+         'NAME': 'your_database_name',  // Create the table in your database before run server
 
-          'USER': 'user_name',  
+         'USER': 'user_name',  
 
-          'PASSWORD': 'user_password',
+         'PASSWORD': 'user_password',
 
-          'HOST': 'localhost',
+         'HOST': 'localhost',
 
-          'PORT': '5432',
+         'PORT': '5432',
+    }
+} 
+```
 
-      }
-
-  } ```
-
-  ### Apply migrations:
-  - `python manage.py makemigrations`
-  - `python manage.py migrate`
-  - 
-  ### Create a Superuser:
+#### Apply migrations:
+- `python manage.py makemigrations`
+- `python manage.py migrate`
+ 
+#### Create a Superuser:
   - `python manage.py createsuperuser`
 
-  ### Run the Development Server:
+#### Run the Development Server:
   - `python manage.py runserver`
+
+
 # Access the API:
 
 The API will be available at http://127.0.0.1:8000/.
