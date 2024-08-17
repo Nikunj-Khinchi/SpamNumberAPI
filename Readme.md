@@ -1,4 +1,4 @@
-# Spam Detection API
+# Spam Number API
 
   This project is a RESTful API built using Django and Django REST Framework. The API is designed to support a mobile app that allows users to register, manage their profiles, report phone numbers as spam, and search for users or contacts by phone number or name.
 
