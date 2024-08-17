@@ -319,5 +319,3 @@ Query Parameters:
 
 name: The name to search for.
 ```
-
-### Detail Routes Info  : [spam_detection_url](spam_detection_url)
