@@ -44,9 +44,8 @@
   ### Set Up the Database:
   - Used the local postgresql for setup
   - Configure your database settings in `spam_detection_api/settings.py.`
-  ```
 
-  DATABASES = {
+  ```DATABASES = {
 
       'default': {
 
@@ -64,9 +63,7 @@
 
       }
 
-  }
-
-  ```
+  } ```
 
   ### Apply migrations:
   - `python manage.py makemigrations`
